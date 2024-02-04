@@ -1,0 +1,49 @@
+Maria joga basquete universitário e quer se tornar profissional. 
+Cada temporada ela mantém um registro de seu jogo. 
+Ela tabula o número de vezes que quebra o recorde da temporada de 
+mais pontos e menos pontos em um jogo. Os pontos marcados no 
+primeiro jogo estabelecem seu recorde na temporada, e ela começa 
+a contar a partir daí.
+
+Exemplo
+
+scores=[12,24,10,24]
+
+As pontuações estão na mesma ordem dos jogos disputados. 
+Ela tabula seus resultados da seguinte forma:
+
+                                     Count
+    Game  Score  Minimum  Maximum   Min Max
+     0      12     12       12       0   0
+     1      24     12       24       0   1
+     2      10     10       24       1   1 
+     3      24     10       24       1   1
+
+
+Dadas as pontuações de uma temporada, determine 
+o número de vezes que Maria quebra seus recordes 
+de mais e menos pontos marcados durante a temporada.
+
+Descriçao da funçao:
+
+Complete a função breakRecords no editor abaixo.
+BreakingRecords tem os seguintes parâmetros:
+
+-> int scores[n]: pontos marcados por jogo
+
+Retorno:
+
+-> int[2]: Um array com o número de vezes que ela 
+quebrou seus recordes. O índice serve para quebrar 
+a maioria dos recordes de pontos e o índice serve 
+para quebrar os recordes de menos pontos.
+Formato de entrada
+
+A primeira linha contém um número inteiro, o número de jogos.
+A segunda linha contém inteiros separados por espaços que 
+descrevem os respectivos valores de score0,score1,...,score(n-1).
+
+Restrições:
+
+-> 1 <= n <=1000
+-> 0 <= scores[i] <= 10x10x10x10x10x10x10x10 = 10⁸
